@@ -1,0 +1,9 @@
+# robots.txt — Dominique Wils, préparation mentale
+# https://www.dominiquewils.fr/
+
+# Autorise tous les robots à explorer le site
+User-agent: *
+Allow: /
+
+# Indique l'emplacement du sitemap
+Sitemap: https://www.dominiquewils.fr/sitemap.xml

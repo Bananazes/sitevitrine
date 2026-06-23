@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dominique Wils — Préparation mentale</title>
+  <meta name="description" content="Préparation mentale par Dominique Wils, diplômé de l'université de Lille. Accompagnement structuré des sportifs, étudiants, dirigeants et artistes pour renforcer concentration, confiance et gestion du stress." />
+  <meta name="author" content="Dominique Wils" />
+  <meta name="keywords" content="préparation mentale, préparateur mental, coaching mental, performance, sportifs, concentration, gestion du stress, confiance, Lille, triathlon, ultratrail" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#fafaf9" />
+  <link rel="canonical" href="https://www.dominiquewils.fr/" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <!-- Open Graph (Facebook, LinkedIn, WhatsApp, Signal, etc.) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:site_name" content="Dominique Wils — Préparation mentale" />
+  <meta property="og:url" content="https://www.dominiquewils.fr/" />
+  <meta property="og:title" content="Dominique Wils — Préparation mentale" />
+  <meta property="og:description" content="Accompagnement structuré pour renforcer vos ressources psychologiques et émotionnelles : sportifs, étudiants, dirigeants, artistes." />
+  <meta property="og:image" content="https://www.dominiquewils.fr/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Dominique Wils, préparation mentale" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.dominiquewils.fr/" />
+  <meta name="twitter:title" content="Dominique Wils — Préparation mentale" />
+  <meta name="twitter:description" content="Accompagnement structuré pour renforcer vos ressources psychologiques et émotionnelles : sportifs, étudiants, dirigeants, artistes." />
+  <meta name="twitter:image" content="https://www.dominiquewils.fr/og-image.jpg" />
+
+  <!-- Données structurées Schema.org : aide les moteurs à comprendre l'activité -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Dominique Wils — Préparation mentale",
+    "description": "Accompagnement en préparation mentale pour sportifs, étudiants, dirigeants et artistes.",
+    "url": "https://www.dominiquewils.fr/",
+    "image": "https://www.dominiquewils.fr/og-image.jpg",
+    "telephone": "+33642891176",
+    "email": "d.wils@orange.fr",
+    "areaServed": "FR",
+    "founder": {
+      "@type": "Person",
+      "name": "Dominique Wils",
+      "jobTitle": "Préparateur mental",
+      "alumniOf": "Université de Lille"
+    }
+  }
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:      #fafaf9;
+      --bg-alt:  #f2f1ee;
+      --bg-dark: #0f0f0e;
+      --ink:     #0f0f0e;
+      --muted:   #6b6b68;
+      --rule:    #d8d7d3;
+      --accent:  #3aabef;
+      --accent-deep: #1a7ec8;
+      --accent-light: #dff1fc;
+      --white:   #fafaf9;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center;
+      padding: 0 48px;
+      height: 60px;
+      background: rgba(250,250,249,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.3s;
+    }
+    nav.scrolled { border-bottom-color: var(--rule); }
+    .nav-logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 18px;
+      color: var(--ink);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+    .nav-links {
+      margin-left: auto;
+      display: flex; gap: 32px; align-items: center;
+    }
+    .nav-links a {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 400; font-size: 13px;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--ink); }
+    .nav-links .cta-link {
+      color: var(--accent-deep);
+      border-bottom: 1px solid var(--accent);
+      padding-bottom: 1px;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      height: 100vh; min-height: 640px;
+      display: flex; align-items: flex-end;
+      overflow: visible;
+    }
+    .hero-img {
+      position: absolute; inset: 0;
+      background-image: url('images/hero.jpg');
+      background-size: cover;
+      background-position: left 35%;
+      filter: blur(2px) brightness(0.45) grayscale(0.3);
+      transform: scale(1.04);
+      transition: transform 8s ease-out;
+    }
+    .hero-img.loaded { transform: scale(1); }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(10,10,10,0.85) 0%,
+        rgba(10,10,10,0.3) 45%,
+        rgba(10,10,10,0.1) 100%
+      );
+    }
+    .hero-content {
+      position: relative; z-index: 2;
+      padding: 80px 80px 100px;
+      max-width: 760px;
+    }
+    .hero-label {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500; font-size: 11px;
+      letter-spacing: 0.16em; text-transform: uppercase;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 16px;
+    }
+    .hero-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(40px, 6vw, 72px);
+      line-height: 1.05;
+      color: var(--white);
+    }
+    .hero-title em {
+      font-style: italic;
+      color: rgba(255,255,255,0.5);
+    }
+    .hero-sub {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300; font-size: 16px;
+      color: rgba(255,255,255,0.65);
+      margin-top: 20px;
+      max-width: 420px;
+      line-height: 1.7;
+    }
+    .hero-actions {
+      display: flex; gap: 14px;
+      margin-top: 32px;
+    }
+    .btn {
+      display: inline-flex; align-items: center;
+      padding: 12px 28px;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500; font-size: 13px;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+      cursor: pointer;
+      transition: opacity 0.2s, background 0.2s;
+    }
+    .btn:hover { opacity: 0.82; }
+    .btn-solid { background: var(--white); color: var(--ink); }
+    .btn-outline-white { background: transparent; color: var(--white); border: 1px solid rgba(255,255,255,0.4); }
+    .btn-outline { background: transparent; color: var(--ink); border: 1px solid var(--rule); }
+    .btn-dark { background: var(--ink); color: var(--white); }
+    .btn-dark:hover { opacity: 0.85; }
+
+    /* ── SCROLL REVEAL ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+
+    /* ── SECTIONS ── */
+    section { padding: 80px 80px; }
+    /* ── BOUTON HAMBURGER (desktop : masqué) ── */
+    .nav-toggle {
+      display: none;
+      margin-left: auto;
+      background: none;
+      border: 0;
+      padding: 10px;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .nav-toggle span {
+      display: block;
+      width: 24px; height: 1.5px;
+      background: var(--ink);
+      margin: 5px 0;
+      transition: transform 0.25s ease, opacity 0.2s ease;
+      transform-origin: center;
+    }
+    .nav-toggle[aria-expanded="true"] span:nth-child(1) {
+      transform: translateY(6.5px) rotate(45deg);
+    }
+    .nav-toggle[aria-expanded="true"] span:nth-child(2) {
+      opacity: 0;
+    }
+    .nav-toggle[aria-expanded="true"] span:nth-child(3) {
+      transform: translateY(-6.5px) rotate(-45deg);
+    }
+
+    @media (min-width: 769px) {
+      .hero-img { background-position: right 35%; }
+    }
+
+    .section-label {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500; font-size: 12px;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 10px;
+    }
+    .section-label.light { color: rgba(255,255,255,0.5); }
+
+    .section-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(28px, 3.5vw, 44px);
+      line-height: 1.08;
+      color: var(--ink);
+      margin-bottom: 0;
+    }
+    .section-title em { font-style: italic; color: var(--muted); }
+    .section-title.light { color: var(--white); }
+
+    .rule { border: none; border-top: 1px solid var(--rule); }
+    .rule-dark { border: none; border-top: 1px solid #1e1e1c; }
+
+    /* ── ACCROCHE ── */
+    #accroche { background: var(--bg); padding-top: 90px; padding-bottom: 72px; }
+    .accroche-inner { max-width: 680px; }
+    .accroche-body {
+      font-size: 17px; font-weight: 300;
+      color: var(--muted); line-height: 1.8;
+      margin-top: 22px;
+    }
+
+    /* ── POUR QUI ── */
+    #pour-qui { background: var(--bg-alt); }
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0;
+      margin-top: 40px;
+      border-top: 1px solid var(--rule);
+    }
+    .audience-card {
+      padding: 28px 0 28px;
+      border-right: 1px solid var(--rule);
+    }
+    .audience-card:last-child { border-right: none; }
+    .audience-card + .audience-card { padding-left: 28px; }
+    .audience-card-title {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500; font-size: 15px;
+      color: var(--ink); margin-bottom: 10px;
+    }
+    .audience-card-body {
+      font-size: 14px; font-weight: 300;
+      color: var(--muted); line-height: 1.65;
+    }
+    .benefices-list {
+      margin-top: 48px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px 40px;
+    }
+    .benefice-item {
+      display: flex; gap: 14px;
+      align-items: flex-start;
+    }
+    .benefice-item::before {
+      content: '';
+      display: block;
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+      margin-top: 7px;
+    }
+    .benefice-num {
+      font-family: 'DM Serif Display', serif;
+      font-size: 11px; color: var(--rule);
+      padding-top: 2px; min-width: 20px;
+    }
+    .benefice-text {
+      font-size: 15px; font-weight: 300;
+      color: var(--muted); line-height: 1.6;
+    }
+
+    /* ── MÉTHODE ── */
+    #methode { background: var(--bg-dark); }
+    .methode-header { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 20px; }
+    .methode-steps {
+      margin-top: 52px;
+      display: flex; flex-direction: column; gap: 0;
+      border-top: 1px solid #1e1e1c;
+    }
+    .step {
+      display: flex; gap: 32px;
+      padding: 28px 0;
+      border-bottom: 1px solid #1e1e1c;
+      align-items: flex-start;
+    }
+    .step-num {
+      font-family: 'DM Serif Display', serif;
+      font-size: 13px; color: #2a2a28;
+      min-width: 28px; padding-top: 3px;
+    }
+    .step-title {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500; font-size: 16px;
+      color: var(--white); min-width: 180px;
+    }
+    .step-body {
+      font-size: 14px; font-weight: 300;
+      color: #8a8a87; line-height: 1.65;
+      flex: 1;
+    }
+    .step-tag {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 11px; font-weight: 500;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--accent-deep);
+      background: rgba(58,171,239,0.12);
+      border: 1px solid rgba(58,171,239,0.3);
+      padding: 5px 0;
+      width: 110px;
+      text-align: center;
+      flex-shrink: 0;
+      align-self: center;
+    }
+
+    /* ── À PROPOS ── */
+    #apropos { background: var(--bg); }
+    .apropos-inner {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 64px;
+      align-items: start;
+    }
+    @media (max-width: 900px) {
+      .apropos-inner { grid-template-columns: 1fr; }
+    }
+    .apropos-img-placeholder {
+      background: repeating-linear-gradient(
+        45deg, #e8e7e3 0px, #e8e7e3 1px, #f2f1ee 1px, #f2f1ee 9px
+      );
+      border: 1px dashed #c8c7c3;
+      height: 400px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 12px; color: #b0b0a8;
+    }
+    .apropos-portrait {
+      width: 340px;
+      height: 460px;
+      object-fit: cover;
+      object-position: 48% top;
+      display: block;
+    }
+    .apropos-body {
+      font-size: 15px; font-weight: 300;
+      color: var(--muted); line-height: 1.8;
+      margin-top: 24px;
+    }
+    .apropos-body p + p { margin-top: 16px; }
+    .apropos-detail {
+      margin-top: 36px;
+      display: flex; flex-direction: column; gap: 14px;
+    }
+    .apropos-detail-item {
+      display: flex; gap: 14px;
+      border-top: 1px solid var(--rule);
+      padding-top: 14px;
+    }
+    .apropos-detail-label {
+      font-size: 10px; font-weight: 500;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--muted); min-width: 110px;
+    }
+    .apropos-detail-value {
+      font-size: 13px; font-weight: 300;
+      color: var(--ink); line-height: 1.5;
+    }
+
+    /* ── CONTACT ── */
+    #contact { background: var(--bg-dark); padding-top: 72px; padding-bottom: 72px; }
+    .contact-inner {
+      display: flex; justify-content: flex-start;
+      align-items: flex-start; flex-wrap: wrap; gap: 48px;
+    }
+    .contact-left { max-width: 600px; width: 100%; }
+    .contact-links {
+      margin-top: 0;
+      display: flex; flex-direction: column; gap: 0;
+      border-top: 1px solid #1e1e1c;
+    }
+    .contact-link-item {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 22px 0;
+      border-bottom: 1px solid #1e1e1c;
+      text-decoration: none;
+    }
+    .contact-link-label {
+      font-size: 10px; font-weight: 500;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: #5a5a57;
+    }
+    .contact-link-value {
+      font-family: 'DM Serif Display', serif;
+      font-size: 22px; color: var(--white);
+      transition: color 0.2s;
+    }
+    .contact-link-item:hover .contact-link-value { color: var(--accent); }
+    .contact-right { padding-top: 8px; }
+    .contact-info-block {
+      border: 1px solid #1e1e1c;
+      padding: 28px 28px;
+    }
+    .contact-info-title {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500; font-size: 11px;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: #5a5a57; margin-bottom: 16px;
+    }
+    .contact-info-list {
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    .contact-info-row {
+      display: flex; justify-content: space-between;
+      gap: 24px;
+    }
+    .contact-info-key {
+      font-size: 12px; font-weight: 300;
+      color: #5a5a57;
+    }
+    .contact-info-val {
+      font-size: 12px; font-weight: 300;
+      color: rgba(255,255,255,0.7); text-align: right;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #080807;
+      padding: 20px 80px;
+      display: flex; justify-content: space-between; align-items: center;
+      border-top: 1px solid #0f0f0e;
+      flex-wrap: wrap; gap: 12px;
+    }
+    .footer-copy {
+      font-size: 11px; color: #5a5a58;
+    }
+    .footer-links {
+      display: flex; gap: 24px;
+    }
+    .footer-links a {
+      font-size: 11px; color: #5a5a58;
+      text-decoration: none; transition: color 0.2s;
+    }
+    .footer-links a:hover { color: #8a8a87; }
+
+    /* ═══════════════════════════════════════════════════════════════
+       RESPONSIVE — ces blocs DOIVENT rester en bas du <style> pour
+       que leurs règles l'emportent sur les règles de base ci-dessus
+       (à spécificité égale, la dernière règle gagne en CSS).
+       ═══════════════════════════════════════════════════════════════ */
+
+    /* ─────────── MOBILE & TABLETTE ─────────── */
+    @media (max-width: 768px) {
+      /* Espacement général */
+      section { padding: 60px 24px; }
+      nav { padding: 0 16px 0 24px; height: 50px; }
+
+      /* Nav : afficher le hamburger, transformer les liens en panneau déroulant */
+      .nav-logo {
+        font-size: 13px;
+        max-width: calc(100% - 60px);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .nav-toggle { display: block; padding: 8px; }
+      .nav-toggle span { width: 22px; margin: 4px 0; }
+      .nav-links {
+        position: fixed;
+        top: 50px; left: 0; right: 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        margin-left: 0;
+        padding: 8px 24px 20px;
+        background: rgba(250,250,249,0.98);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--rule);
+        transform: translateY(-120%);
+        transition: transform 0.3s ease;
+        max-height: calc(100vh - 50px);
+        overflow-y: auto;
+      }
+      .nav-links.open { transform: translateY(0); }
+      .nav-links a {
+        padding: 16px 0;
+        font-size: 16px;
+        border-bottom: 1px solid var(--rule);
+      }
+      .nav-links a:last-child { border-bottom: none; }
+      .nav-links .cta-link {
+        border-bottom: 1px solid var(--rule);
+        padding-bottom: 16px;
+      }
+
+      /* Hero : éviter la largeur fixe et l'oversize du padding,
+         et centrer verticalement le contenu (plutôt que coller en bas comme en desktop) */
+      .hero { min-height: 560px; align-items: center; }
+      .hero-content { padding: 0 24px; max-width: 100%; }
+      /* Image de fond : filtres allégés sur mobile pour rester visible en plein soleil */
+      .hero-img {
+        background-position: left 35%;
+        filter: blur(1px) brightness(0.7) grayscale(0.2);
+      }
+      /* Dégradé d'assombrissement adouci pour ne pas étouffer l'image,
+         tout en gardant un fond sombre derrière le texte (centré sur mobile) */
+      .hero-overlay {
+        background: linear-gradient(
+          to top,
+          rgba(10,10,10,0.55) 0%,
+          rgba(10,10,10,0.45) 50%,
+          rgba(10,10,10,0.25) 100%
+        );
+      }
+      .hero-sub { width: auto !important; max-width: 100%; font-size: 15px; }
+      .hero-actions { flex-wrap: wrap; }
+
+      /* Accroche */
+      #accroche { padding-top: 60px; padding-bottom: 48px; }
+
+      /* Pour qui : grille bénéfices en une colonne, audience-grid empilée proprement
+         (les cartes sont séparées par UNE bordure entre chacune, pas une au-dessus de chaque) */
+      .benefices-list { grid-template-columns: 1fr; gap: 14px; }
+      .audience-card { border-right: none; padding: 22px 0; }
+      .audience-card + .audience-card {
+        padding-left: 0;
+        border-top: 1px solid var(--rule);
+      }
+
+      /* Méthode : les étapes deviennent verticales */
+      .step { flex-direction: column; gap: 10px; padding: 22px 0; }
+      .step-title { min-width: 0; }
+      .step-tag {
+        align-self: flex-start;
+        width: auto;
+        padding: 5px 14px;
+      }
+
+      /* À propos : photo en flux normal */
+      .apropos-portrait {
+        width: 100%;
+        max-width: 340px;
+        height: auto;
+        aspect-ratio: 340 / 460;
+        margin: 24px auto 0;
+      }
+      .apropos-detail-item { flex-direction: column; gap: 4px; }
+      .apropos-detail-label { min-width: 0; }
+
+      /* Contact : libellé et valeur empilés (l'email peut être long) */
+      #contact { padding-left: 24px; padding-right: 24px; }
+      .contact-link-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        padding: 18px 0;
+      }
+      .contact-link-value { font-size: 18px; word-break: break-word; }
+
+      /* Footer : empilage propre */
+      footer {
+        padding: 20px 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+      .footer-links { flex-wrap: wrap; }
+    }
+
+    /* Très petits écrans (320-360 px) — ajustements fins */
+    @media (max-width: 380px) {
+      .hero-title { font-size: 36px; }
+      .nav-logo { font-size: 12px; }
+      section { padding: 48px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="main-nav">
+  <a class="nav-logo" href="#">Dominique Wils - Préparateur Mental</a>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links" id="nav-links">
+    <a href="#pour-qui">Pour qui ?</a>
+    <a href="#methode">Méthode</a>
+    <a href="#apropos">À propos</a>
+    <a href="#contact" class="cta-link">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-img" id="hero-img"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 class="hero-title">
+      Renforcez votre mental.<br /><em>Libérez votre potentiel.</em>
+    </h1>
+    <!--<p class="hero-sub" style="max-width: 500px; font-weight: 400">
+      Un accompagnement structuré pour renforcer vos ressources psychologiques et émotionnelles afin d'améliorer votre performance, votre bien-être ainsi que votre capacité à atteindre vos objectifs.
+    </p>-->
+
+  </div>
+</section>
+
+<!-- ACCROCHE -->
+<section id="accroche">
+  <div class="accroche-inner">
+    <div class="reveal">
+      <div class="section-label">Préparation mentale</div>
+      <h2 class="section-title">La performance,<br /><em>c'est d'abord mental.</em></h2>
+    </div>
+    <p class="accroche-body reveal reveal-delay-1">
+      Un accompagnement structuré pour renforcer vos ressources psychologiques et émotionnelles afin d'améliorer votre performance, votre bien-être ainsi que votre capacité à atteindre vos objectifs.
+    </p>
+  </div>
+</section>
+
+<hr class="rule" />
+
+<!-- POUR QUI -->
+<section id="pour-qui">
+  <div class="reveal"><div class="section-label">Pour qui ?</div></div>
+  <h2 class="section-title reveal reveal-delay-1">Un accompagnement<br /><em>ouvert à tous.</em></h2>
+
+  <!-- Sportifs — cible principale -->
+  <div class="reveal" style="margin-top: 40px; padding: 32px 0; border-top: 2px solid var(--accent); border-bottom: 1px solid var(--rule);">
+    <div style="display: flex; gap: 48px; align-items: flex-start; flex-wrap: wrap;">
+      <div style="min-width: 180px;">
+        <div style="font-family: 'DM Serif Display', serif; font-size: 28px; color: var(--ink); line-height: 1.05;">Sportifs</div>
+      </div>
+      <div style="flex: 1; min-width: 260px;">
+        <div style="font-size: 15px; font-weight: 300; color: var(--muted); line-height: 1.75;">
+          Pratiquant d'un sport ou d'une activité sportive qui souhaite progresser dans sa pratique — quel que soit le niveau ou l'expérience, du débutant au confirmé.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ce que vous développerez -->
+  <div style="margin-top: 52px;">
+    <div class="section-label reveal" style="margin-bottom: 28px;">Ce que vous développerez</div>
+    <div class="benefices-list" style="margin-top: 0;">
+      <div class="benefice-item reveal reveal-delay-1">
+        <div class="benefice-text">Améliorer la gestion du stress, de la pression, des imprévus et des enjeux</div>
+      </div>
+      <div class="benefice-item reveal reveal-delay-2">
+        <div class="benefice-text">Développer une confiance durable, une motivation solide et une concentration de qualité</div>
+      </div>
+      <div class="benefice-item reveal reveal-delay-3">
+        <div class="benefice-text">Installer des routines mentales efficaces avant, pendant et après la compétition</div>
+      </div>
+      <div class="benefice-item reveal reveal-delay-4">
+        <div class="benefice-text">Réguler vos émotions, rester lucide dans l'effort, rebondir après un échec</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Autres publics -->
+  <div class="reveal" style="margin-top: 52px; padding-top: 32px; border-top: 1px solid var(--rule);">
+    <div class="section-label" style="margin-bottom: 20px;">Également pour</div>
+    <div class="audience-grid" style="margin-top: 0;">
+      <div class="audience-card reveal reveal-delay-1">
+        <div class="audience-card-title">Étudiants</div>
+        <div class="audience-card-body">Examens, concours, oraux — gérer la pression des grands moments et performer quand ça compte.</div>
+      </div>
+      <div class="audience-card reveal reveal-delay-2">
+        <div class="audience-card-title">Dirigeants & cadres</div>
+        <div class="audience-card-body">Performance, communication, prise de décision sous pression, surcharge mentale.</div>
+      </div>
+      <div class="audience-card reveal reveal-delay-3">
+        <div class="audience-card-title">Artistes & orateurs</div>
+        <div class="audience-card-body">Trac, exposition publique, gestion des hauts et bas émotionnels liés à la création et à la performance.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule" />
+
+<!-- MÉTHODE -->
+<section id="methode">
+  <div class="methode-header">
+    <div>
+      <div class="section-label light reveal">Comment ?</div>
+      <h2 class="section-title light reveal reveal-delay-1">L'accompagnement<br /><em style="color:rgba(255,255,255,0.5)">en cabinet, à domicile ou sur le lieu de pratique.</em></h2>
+    </div>
+  </div>
+  <div class="methode-steps">
+    <div class="step reveal">
+      <div class="step-title">Premier rendez-vous</div>
+      <div class="step-body">Évaluation de vos attentes et élaboration d'une proposition personnalisée.</div>
+    </div>
+    <div class="step reveal reveal-delay-1">
+      <div class="step-title">Devis personnalisé</div>
+      <div class="step-body">Rédaction d'un devis adapté à votre situation, vos objectifs.</div>
+    </div>
+    <div class="step reveal reveal-delay-2">
+      <div class="step-title">Séances individuelles</div>
+      <div class="step-body">Accompagnement sur-mesure, de 45 min à 1h15 par séance. De 1 à 10 séances selon votre programme.</div>
+    </div>
+    <div class="step reveal reveal-delay-3">
+      <div class="step-title">Séances collectives</div>
+      <div class="step-body">Initiation ou sensibilisation. De 10 à 12 personnes.</div>
+    </div>
+  </div>
+</section>
+
+<!-- À PROPOS -->
+<section id="apropos">
+  <div class="apropos-inner">
+    <div>
+      <div class="section-label reveal">À propos</div>
+      <h2 class="section-title reveal reveal-delay-1">Dominique Wils</h2>
+      <div class="apropos-body reveal reveal-delay-2">
+        <p>Préparateur mental diplômé de l'université de Lille, je me consacre à l'accompagnement des sportifs, qu'ils soient amateurs ou compétiteurs, en optimisant leur gestion des émotions et du stress. À travers des outils tels que l'imagerie mentale, le contrôle respiratoire, j'aide les athlètes à atteindre leurs objectifs en triathlon, ultratrail, tennis, équitation et autres disciplines.
+
+Mon approche repose sur une écoute attentive et des techniques adaptées pour développer et renforcer leur mental.</p>
+        <p>Passionné par la performance, les défis et la compétition, j'ai participé à de nombreuses courses de Moto en rallye routier - Ultimate Rallye Moto Tour, Tunisian Moto Tour et plusieurs épreuves du championnat de France qui m’ont procuré beaucoup de joie, de plaisir et quelques podiums.</p>
+      </div>
+      <!-- Références — masquées tant que Dominique n'a pas fourni les noms définitifs.
+           Décommenter ce bloc et remplir les valeurs pour les réafficher. -->
+      <!--
+      <div class="apropos-detail reveal reveal-delay-3">
+        <div class="apropos-detail-item">
+          <div class="apropos-detail-label">Référence 1</div>
+          <div class="apropos-detail-value">Nom, sport ou organisation</div>
+        </div>
+        <div class="apropos-detail-item">
+          <div class="apropos-detail-label">Référence 2</div>
+          <div class="apropos-detail-value">Nom, sport ou organisation</div>
+        </div>
+        <div class="apropos-detail-item">
+          <div class="apropos-detail-label">Référence 3</div>
+          <div class="apropos-detail-value">Nom, sport ou organisation</div>
+        </div>
+      </div>
+      -->
+
+    </div>
+    <div class="reveal reveal-delay-2">
+      <img class="apropos-portrait" src="images/portrait.png" alt="Dominique Wils — triathlon" />
+    </div>
+  </div>
+</section>
+
+<hr class="rule" />
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="contact-left">
+      <div class="section-label light reveal">Contact</div>
+      <div class="contact-links reveal reveal-delay-1" style="margin-top: 20px;">
+        <a href="mailto:d.wils@orange.fr" class="contact-link-item">
+          <span class="contact-link-label">Email</span>
+          <span class="contact-link-value">d.wils@orange.fr</span>
+        </a>
+        <a href="tel:+33684833340" class="contact-link-item">
+          <span class="contact-link-label">Téléphone</span>
+          <span class="contact-link-value">+33 6 84 83 33 40</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-copy">© 2026 Dominique Wils — Préparateur mental</span>
+  <div class="footer-links">
+    <a href="mailto:d.wils@orange.fr">d.wils@orange.fr</a>
+    <a href="mentions-legales.html">Mentions légales</a>
+    <a href="#hero">Retour en haut ↑</a>
+  </div>
+</footer>
+
+<script>
+  // Nav scroll state
+  const nav = document.getElementById('main-nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+  }, { passive: true });
+
+  // Mobile nav toggle (hamburger)
+  const navToggle = document.getElementById('nav-toggle');
+  const navLinks = document.getElementById('nav-links');
+  function setMenuOpen(open) {
+    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    navToggle.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
+    navLinks.classList.toggle('open', open);
+  }
+  navToggle.addEventListener('click', () => {
+    const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
+    setMenuOpen(!isOpen);
+  });
+  // Close on link click
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenuOpen(false)));
+  // Close on resize to desktop
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) setMenuOpen(false);
+  });
+
+  // Hero image subtle zoom
+  const heroImg = document.getElementById('hero-img');
+  setTimeout(() => heroImg.classList.add('loaded'), 100);
+
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  reveals.forEach(el => observer.observe(el));
+</script>
+
+<template id="__bundler_thumbnail" data-bg-color="#fafaf9">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#fafaf9"/>
+    <rect x="360" y="180" width="480" height="4" rx="2" fill="#0f0f0e" opacity="0.15"/>
+    <rect x="440" y="210" width="320" height="4" rx="2" fill="#0f0f0e" opacity="0.1"/>
+    <rect x="500" y="340" width="200" height="48" rx="24" fill="#3aabef"/>
+    <circle cx="600" cy="500" r="80" fill="#3aabef" opacity="0.08"/>
+    <text x="600" y="195" text-anchor="middle" font-family="serif" font-size="28" fill="#0f0f0e" opacity="0.5">Dominique Wils</text>
+  </svg>
+</template>
+</body>
+</html>
